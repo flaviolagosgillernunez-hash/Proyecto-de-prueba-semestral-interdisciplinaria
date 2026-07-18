@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Galería Escolar - 6 Materias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .materia {
+            font-weight: bold;
+            color: #0076d6;
+            margin-bottom: 12px;
+            text-align: left;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            border-bottom: 2px solid #eef2f7;
+            padding-bottom: 5px;
+        }
+        img, video {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        p {
+            margin-top: 12px;
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mis Contenidos de Clase</h1>
+
+    <div class="galeria">
+        <!-- 1. MATEMÁTICA (IMAGEN) -->
+        <div class="item">
+            <div class="materia">Materia: Matemática</div>
+            <img src="matematica.jpg" alt="Gráficas y fórmulas">
+            <p>Fórmulas de álgebra y ecuaciones cuadráticas.</p>
+        </div>
+
+        <!-- 2. HISTORIA (VIDEO) -->
+        <div class="item">
+            <div class="materia">Materia: Historia</div>
+            <video src="historico.mp4" controls></video>
+            <p>Resumen visual de la Segunda Guerra Mundial.</p>
+        </div>
+
+        <!-- 3. CIENCIAS (IMAGEN) -->
+        <div class="item">
+            <div class="materia">Materia: Ciencias</div>
+            <img src="ciencias.jpg" alt="Laboratorio de química">
+            <p>Experimento de la tabla periódica y elementos.</p>
+        </div>
+
+        <!-- 4. LITERATURA (VIDEO) -->
+        <div class="item">
+            <div class="materia">Materia: Literatura</div>
+            <video src="literatura.mp4" controls></video>
+            <p>Análisis literario de poemas del Siglo de Oro.</p>
+        </div>
+
+        <!-- 5. GEOGRAFÍA (IMAGEN) -->
+        <div class="item">
+            <div class="materia">Materia: Geografía</div>
+            <img src="geografia.jpg" alt="Mapa mundial">
+            <p>Estudio de los relieves y climas continentales.</p>
+        </div>
+
+        <!-- 6. INGLÉS (VIDEO) -->
+        <div class="item">
+            <div class="materia">Materia: Inglés</div>
+            <video src="ingles.mp4" controls></video>
+            <p>Práctica de pronunciación y verbos irregulares.</p>
+        </div>
+    </div>
+
+</body>
+</html>
