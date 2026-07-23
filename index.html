@@ -83,5 +83,22 @@
         </div>
     </div>
 
+    <!-- Script unificado para bloquear clic derecho, F12 y Ctrl+U -->
+    <script>
+        // Bloquear clic derecho (Menú contextual)
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+
+        // Bloquear F12 y Ctrl+U
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'F12') {
+                e.preventDefault();
+            }
+            if (e.ctrlKey && e.key === 'u') {
+                e.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>
