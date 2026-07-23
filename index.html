@@ -30,6 +30,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
+            align-items: center; /* Centra horizontalmente el QR dentro de la tarjeta */
         }
         .materia {
             font-weight: bold;
@@ -40,11 +41,11 @@
             text-transform: uppercase;
             border-bottom: 2px solid #eef2f7;
             padding-bottom: 5px;
+            width: 100%; /* Asegura que la línea azul ocupe todo el ancho */
         }
         img, video {
-            width: 90%;
-            height: 200px;
-            object-fit: cover;
+            width: 60%; /* Reduce el tamaño del QR para que no toque los bordes */
+            height: auto; /* Mantiene la proporción cuadrada original del QR sin cortarlo */
             border-radius: 5px;
         }
         p {
@@ -63,21 +64,21 @@
         <!-- 1. MATEMÁTICA (IMAGEN) -->
         <div class="item">
             <div class="materia">Materia: Matemática</div>
-            <img src="QR_Lo_De_Matematica.png">
+            <img src="QR_Lo_De_Matematica.png" alt="QR Matemática">
             <p>Martín, Isabella, Thiago, Vinicius, Benjamín. O MITVB</p>
         </div>
 
         <!-- 2. HISTORIA (VIDEO) -->
         <div class="item">
             <div class="materia">Materia: Historia</div>
-            <img src="Historia_QR.png">
+            <img src="Historia_QR.png" alt="QR Historia">
             <p>Martín, Isabella, Thiago, Vinicius, Benjamín. O MITVB</p>
         </div>
 
         <!-- 6. INGLÉS (VIDEO) -->
         <div class="item">
             <div class="materia">Materia: Inglés</div>
-            <img src="Ingles.png">
+            <img src="Ingles.png" alt="QR Inglés">
             <p>Martín, Isabella, Thiago, Vinicius, Benjamín. O MITVB</p>
         </div>
     </div>
